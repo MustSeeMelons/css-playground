@@ -1,0 +1,44 @@
+.pre-simple-button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.pre-primary {
+  color: darkolivegreen;
+  background-color: khaki;
+
+  &:hover {
+    color: darkgoldenrod;
+    background-color: yellow;
+  }
+
+  &:hover ~ .pre-info-box {
+    &:after {
+      content: "click it";
+      font-weight: bold;
+      transition: ease-in-out 0.2s;
+    }
+  }
+}
+
+.pre-secondary {
+  background-color: cornsilk;
+
+  &:hover {
+    background-color: gold;
+  }
+
+  &:hover ~ .pre-info-box {
+    &:after {
+      content: "why even give the option";
+      font-weight: bold;
+      transition: ease-in-out 0.2s;
+    }
+  }
+}

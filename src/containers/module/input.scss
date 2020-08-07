@@ -1,0 +1,48 @@
+.pre-input-container {
+  position: relative;
+  margin: 10px;
+}
+
+.pre-input {
+  padding: 23px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+
+  &:focus + .pre-input-label {
+    color: crimson;
+    transition: ease-in-out 0.3s;
+    top: 3px;
+    left: 23px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.pre-input-label {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+
+.pre-name-input {
+  &:hover ~ .pre-info-box {
+    &::after {
+      content: "hello";
+      font-weight: bold;
+      transition: ease-in-out 0.2s;
+    }
+  }
+}
+
+.pre-surname-input {
+  &:hover ~ .pre-info-box {
+    &::after {
+      content: "almost done";
+      font-weight: bold;
+      transition: ease-in-out 0.2s;
+    }
+  }
+}
