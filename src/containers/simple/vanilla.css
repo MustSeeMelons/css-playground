@@ -1,37 +1,37 @@
-.pre-css {
+.vanilla {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 250px;
   width: 100%;
-  background-color: darkkhaki;
+  background-color: antiquewhite;
   padding: 10px;
 }
 
-.pre-form {
+.simple-form {
   display: grid;
   width: 350px;
 }
 
-.pre-info-box {
+.info-box {
   height: 20px;
   width: 100%;
   text-align: center;
-
-  &:after {
-    content: "nothing to see here";
-    margin: 10px;
-  }
 }
 
-.pre-both-columns {
+.info-box::after {
+  content: "nothing to see here";
+  margin: 10px;
+}
+
+.both-columns {
   grid-column: 1/3;
 }
 
-.pre-left-button {
+.left-button {
   grid-column: 1/2;
 }
 
-.pre-right-button {
+.right-button {
   grid-column: 2/3;
 }

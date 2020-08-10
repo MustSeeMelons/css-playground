@@ -1,12 +1,14 @@
 import React from "react";
-import { SimpleCss } from "./containers/simple/simple-css";
-import { ModuleCss } from "./containers/module/module-css";
+import { VanillaImplementation } from "./containers/simple/vanilla";
+import { PreProcessedImplementation } from "./containers/preprocessed/preprocessed";
+import { StyledImplementation } from "./containers/styled/styled";
 
 const Root = () => {
   return (
     <div>
-      <SimpleCss />
-      <ModuleCss />
+      <VanillaImplementation />
+      <PreProcessedImplementation />
+      <StyledImplementation />
     </div>
   );
 };

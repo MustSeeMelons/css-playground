@@ -9,8 +9,8 @@ interface ITextInputComponentProps {
 const Input: React.FC<ITextInputComponentProps> = (props) => {
   return (
     <div className={`input-container ${props.className}`}>
-      <input className="input" id="name-input"></input>
-      <label className="input-label" htmlFor="name-input">
+      <input className="input" id={`pre-${props.label}`}></input>
+      <label className="input-label" htmlFor={`pre-${props.label}`}>
         {props.label}
       </label>
     </div>

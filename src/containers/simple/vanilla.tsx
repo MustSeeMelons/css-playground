@@ -1,11 +1,11 @@
 import React from "react";
-import "./simple-css.css";
+import "./vanilla.css";
 import { Input } from "./input";
 import { Button } from "./button";
 
-const SimpleCss = () => {
+const VanillaImplementation = () => {
   return (
-    <div className="simple-css">
+    <div className="vanilla">
       <div className="simple-form">
         <Input className="both-columns name-input" label="name" />
         <Input className="both-columns surname-input" label="surname" />
@@ -17,4 +17,4 @@ const SimpleCss = () => {
   );
 };
 
-export { SimpleCss };
+export { VanillaImplementation };
