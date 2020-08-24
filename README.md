@@ -1,6 +1,10 @@
-# Show off:
+# Implementing the same thing with:
 
-- Basic component
-- Extending existing components
-- Selectors
-- Changing other components from one aother
+- vanilla css
+- scss
+- styled components
+
+# Just do:
+
+`npm i`
+`npm start`
